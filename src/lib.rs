@@ -8,6 +8,9 @@ pub fn some_noise_function(position: i32) -> u32 {
     let mut mangled = position as u32;
     mangled = mangled.wrapping_mul(SOME_BIG_PRIME_NUMBER);
     mangled = mangled.wrapping_add(SOME_OTHER_NUMBER);
+    mangled = mangled.wrapping_mul(mangled);
+
+    mangled ^= mangled >> 13;
 
     mangled
 }
