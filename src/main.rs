@@ -8,6 +8,10 @@ fn main() {
 
     println!("Some Noise Function results:");
     for number in 0..12 {
-        println!("Input {} produces output {}", number, some_noise_function(number))
+        println!(
+            "Input {} produces output {}",
+            number,
+            some_noise_function(number)
+        )
     }
 }
