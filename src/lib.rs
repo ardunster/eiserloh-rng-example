@@ -20,12 +20,12 @@ pub fn squirrel_3(position: i32, seed: u32) -> u32 {
     const BIT_NOISE3: u32 = 0x1B56C4E9;
 
     let mut mangled = position as u32;
-    mangled *= BIT_NOISE1;
+    mangled = mangled.wrapping_mul(BIT_NOISE1);
     mangled += seed;
     mangled ^= mangled >> 8;
-    mangled += BIT_NOISE2;
+    mangled = mangled.wrapping_add(BIT_NOISE2);
     mangled ^= mangled << 8;
-    mangled *= BIT_NOISE3;
+    mangled = mangled.wrapping_mul(BIT_NOISE3);
     mangled ^= mangled >> 8;
 
     mangled

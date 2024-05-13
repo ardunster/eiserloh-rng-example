@@ -4,4 +4,4 @@ These functions are based on examples taken from [Squirrel Eiserloh](http://www.
 
 Of course, you can always just use [`std::hash`](https://doc.rust-lang.org/std/hash/index.html) and save yourself some time, but seeing how these kinds of things work is an interesting exercise!
 
-For more details, please see my [blog post]() discussing the contents.
+For more details, please see my [blog post](https://www.annardunster.com/posts/2024/eiserloh-noise-rng-rust) discussing the contents.
