@@ -4,7 +4,6 @@ const SOME_BIG_PRIME_NUMBER: u32 = 27_644_437;
 const SOME_OTHER_NUMBER: u32 = 17;
 
 pub fn some_noise_function(position: i32) -> u32 {
-    println!("Called some_noise_function");
     let mut mangled = position as u32;
     mangled = mangled.wrapping_mul(SOME_BIG_PRIME_NUMBER);
     mangled = mangled.wrapping_add(SOME_OTHER_NUMBER);
